@@ -33,6 +33,10 @@ Correct diagnosis + wrong target system = inert PR. Before writing: grep what RE
 - Deferred verification → leave `# inquisitor: <what was skipped, how to close>` marker.
 - Open queries route to a durable home (marker / PR body / session store / QUERIES.md — ask before creating), formatted `[OPEN] <question> — closes when: <check>`. At the start of SIMPLE+ work, check existing markers and QUERIES.md — an old open query may be today's bug. Close what you can.
 
+## Shipping
+
+Match the repo's commit convention (read `git log --oneline -10` first — follow conventional commits only if the repo does). Atomic commits. PR body: problem → evidence → fix → how verified → open queries. No secrets, no unrelated dirty files.
+
 ## Code (ponytail ladder — stop at first rung that holds)
 
 1. Needs to exist? (YAGNI) 2. Already in codebase? 3. Stdlib? 4. Native platform? 5. Installed dep? 6. One line? 7. Minimum that works.

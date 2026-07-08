@@ -164,6 +164,13 @@ Before closing SYNTHESIS or opening a PR, answer aloud in the response:
 
 Can't name one? Run the experiment now, or write in the PR: `"I could not verify runtime; a human should test X."` **Ship-if-unsure is banned.** If the fix touches infra/deploy/config/routing and you cannot reach the runtime, escalate to the user before opening the PR.
 
+### Shipping — commits and PRs
+
+- **Detect the repo's convention, then match it**: read `git log --oneline -10` before writing a commit message. Repo uses conventional commits (`feat:`, `fix:`, `docs:`) → follow it, correct type, imperative mood. Repo uses another style → match that instead. Never impose a convention the repo doesn't use.
+- **Atomic commits**: one logical change per commit. Never mix the fix with drive-by refactors (P10 rule 4 already bans those).
+- **PR description mirrors the investigation**: problem (one sentence) → evidence (`file:line`, tool output) → fix → how it was verified (the runtime signal from self-audit) → `## Open queries` if any. A reviewer should be able to check your reasoning, not just your diff.
+- Never commit secrets; never commit unrelated files that happen to be dirty in the tree.
+
 ### `# inquisitor:` markers — deferred verifications
 
 When you deliberately skip an experiment, a verification, or a phase, leave a marker in code or the PR body naming WHAT was skipped and the check needed to close it:
