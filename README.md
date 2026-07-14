@@ -13,8 +13,6 @@ Triage · Prune · Investigate — never overcomplicate
 
 </div>
 
----
-
 ## Overview
 
 **inquisitor** makes AI agents solve problems the way a chess engine plays chess: it cannot explore every branch, so it **estimates complexity first, prunes paths that add no information, and spends its search budget only where the problem actually is**.
