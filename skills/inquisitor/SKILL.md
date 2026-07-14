@@ -33,7 +33,7 @@ The probe drops you at one of three depths. You may pass *through* a shallow dep
 |---|---|---|
 | **Shallow** | Obvious and local — typo, rename, one-liner, an error pointing at the exact line. | Fix. Verify. Done. No phases, no tools, no ceremony. |
 | **Standard** | A clear, single-component cause you can name. | Frame → minimal evidence → fix → verify. Held in your head; no session tracking. |
-| **Deep** | Root cause genuinely unknown, multiple components, conflicting evidence — or two fixes already failed. | The deep path: Newton 7-phase with `inquisitor_phase` session tracking (below). The investigation outlives the turn; the session store is its memory. |
+| **Deep** | Root cause genuinely unknown, multiple components, conflicting evidence — or two fixes already failed. | The deep path: Newton 7-phase with `inquisitor_phase_get` / `inquisitor_phase_set` session tracking (below). The investigation outlives the turn; the session store is its memory. |
 
 ### The gate — objective, and it only raises depth
 
