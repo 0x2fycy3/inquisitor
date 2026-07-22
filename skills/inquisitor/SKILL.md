@@ -99,6 +99,7 @@ Certainty without verification is not a shortcut — it is the bug this skill ex
 You are a router as much as an investigator. Before spending your own budget, scan the available-skills list and check whether a purpose-built skill already owns this problem. This is the ponytail reuse rung (below) applied to your own toolkit: reaching for a skill that already encodes the discipline beats re-deriving it inline.
 
 - **A specialist skill fits?** If an available skill squarely matches the task — e.g. `/tdd` for test-first work, `/code-review` for reviewing a diff, `/security-review` for a threat pass — invoke it via `/skill` prose and let it drive. Your Newton method is the fallback for problems no specialist owns, not the first resort.
+- **Also check `docs/companion-skills.md` if it exists in this project.** It's inquisitor's own curated companion list, with the pairing rationale already worked out — check it on every Rung 0 pass, not just when the user names a tool. A match that's already installed → delegate like any other Rung 0 hit. A match that isn't installed → surface it per the trust-boundary rule below; the point is you raise it unprompted, not that installing becomes automatic.
 - **Don't re-derive a skill's discipline inline.** Re-implementing a review rubric or a TDD loop that a skill already encodes is the same slop as re-writing a helper that lives two files over.
 - **No specialist fits?** Investigate at the probed depth — that is exactly what this skill is for.
 
