@@ -14,7 +14,7 @@ An up-front difficulty guess is an LLM's least reliable signal — biased to und
 
 ## Delegate before you dig (router first)
 
-If a purpose-built skill squarely owns the task (`/tdd`, `/code-review`, `/security-review`, …), invoke it via `/skill` prose and let it drive — the Newton method is the fallback for problems no specialist owns, not the first resort. Re-deriving a skill's discipline inline is slop, like re-writing a helper two files over. Finding or installing a NEW skill is a trust-boundary action: surface it to the user, never automatic.
+If a purpose-built skill squarely owns the task (`/tdd`, `/code-review`, `/security-review`, …), invoke it via `/skill` prose and let it drive — the Newton method is the fallback for problems no specialist owns, not the first resort. Also check `docs/companion-skills.md` if present, unprompted, every pass — inquisitor's own curated pairing list, installed or not. Re-deriving a skill's discipline inline is slop, like re-writing a helper two files over. Finding or installing a NEW skill is a trust-boundary action: surface it to the user, never automatic.
 
 ## The gate (objective — only raises depth, never lowers)
 
